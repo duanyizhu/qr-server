@@ -11,8 +11,8 @@
                 var currency = document.getElementById("currency").value;
                 var data = 'checkoutId=' + checkoutId + '~' + 'last=' + cardId + '~' + 'amount=' + amount + '~' + 'currency=' + currency;
                 var url = 'https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=' + data;
-                alert (url);
-                $('#qrcode').attr('src', url);
+                document.getElementById("qrcode").src = url;
+
             }
         </script>
     </head>
